@@ -1,0 +1,84 @@
+{
+  "python": [
+    {
+      "package": "skytemple-files",
+      "version": "1.8.5",
+      "filename": "skytemple_files-1.8.5-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/eb/c4/73827aae5d1c64d1a413efd86367daea3d235449baf27dea6ae718dfd438/skytemple_files-1.8.5-py3-none-any.whl",
+      "sha256": "757452b470b9a55c6ccf900b1955255e9df4f63b0360df2e41f78584b4b43277",
+      "source": {
+        "Announcements": "https://blog.skytemple.org",
+        "Discord": "https://discord.gg/skytemple",
+        "Documentation": "https://wiki.skytemple.org",
+        "Homepage": "https://skytemple.org",
+        "Issues": "https://github.com/SkyTemple/skytemple-files/issues",
+        "Repository": "https://github.com/SkyTemple/skytemple-files.git"
+      }
+    },
+    {
+      "package": "explorerscript",
+      "version": "0.2.4",
+      "filename": "explorerscript-0.2.4-cp314-cp314-macosx_11_0_arm64.whl",
+      "url": "https://files.pythonhosted.org/packages/2d/a4/dfdc97924aab544c80c0dc127c11bffb3594ad88322ffd288525dd906937/explorerscript-0.2.4-cp314-cp314-macosx_11_0_arm64.whl",
+      "sha256": "81918ec462cf99bf82f8960355671f745caeab4eedafd7e52ac42dd00557ea87",
+      "source": {
+        "Announcements": "https://blog.skytemple.org",
+        "Discord": "https://discord.gg/skytemple",
+        "Documentation": "https://wiki.skytemple.org",
+        "Homepage": "https://skytemple.org",
+        "Issues": "https://github.com/SkyTemple/ExplorerScript/issues",
+        "Repository": "https://github.com/SkyTemple/ExplorerScript.git"
+      }
+    },
+    {
+      "package": "pmdsky-debug-py",
+      "version": "10.0.48",
+      "filename": "pmdsky_debug_py-10.0.48-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/76/30/8de2e0dda61a9bf2cd6b54f6a6f75950c6e69692c6b9084fb3103eb9af15/pmdsky_debug_py-10.0.48-py3-none-any.whl",
+      "sha256": "4d7ec0213dbd10aa2764f22d74a831ecae0db82b175a0b156882fbc2a834c37a",
+      "source": {
+        "repository": "https://github.com/SkyTemple/pmdsky-debug-py"
+      }
+    },
+    {
+      "package": "ndspy",
+      "version": "4.2.0",
+      "filename": "ndspy-4.2.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/07/01/c60b57a0aa66074552acbbc16786b34c93caa72f3fdda64fada11866482a/ndspy-4.2.0-py3-none-any.whl",
+      "sha256": "d3b03e57ef5ba450e766035e1908293f7a6ba1a738736fae42b2c66952abb85b",
+      "source": {
+        "Homepage": "https://github.com/RoadrunnerWMC/ndspy"
+      }
+    },
+    {
+      "package": "range-typed-integers",
+      "version": "1.0.1",
+      "filename": "range_typed_integers-1.0.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/2e/49/565350c6fab3f5a3e2c46633290117060e70e2501544cdf3bde1d1d5d0fe/range_typed_integers-1.0.1-py3-none-any.whl",
+      "sha256": "35d39a41642503c5c5117e26798713f081b1beece1b2afd8f1ba70c8d90f63c5",
+      "source": {
+        "repository": "https://github.com/theCapypara/range-typed-integers"
+      }
+    },
+    {
+      "package": "appdirs",
+      "version": "1.4.4",
+      "filename": "appdirs-1.4.4-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/3b/00/2344469e2084fb287c2e0b57b72910309874c3245463acd6cf5e3db69324/appdirs-1.4.4-py2.py3-none-any.whl",
+      "sha256": "a841dacd6b99318a741b166adb07e19ee71a274450e68237b4650ca1055ab128",
+      "source": {
+        "Homepage": "http://github.com/ActiveState/appdirs"
+      }
+    },
+    {
+      "package": "dungeon-eos",
+      "version": "0.0.5",
+      "filename": "dungeon_eos-0.0.5-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/12/fe/c5a97ebb13459cfeac5ed0df508ebffba22670aecc6f802d5fa9f5de3e2f/dungeon_eos-0.0.5-py3-none-any.whl",
+      "sha256": "210de2aeea9fb0bdebe1f9264b9208f9d765a44934beb9fa876f16612bd35c78",
+      "source": {
+        "Homepage": "https://github.com/SkyTemple/dungeon_eos/"
+      }
+    }
+  ]
+}

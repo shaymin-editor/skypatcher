@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./gracidea.png" />
+    <title>Shaymin SkyPatcher</title>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <img src="./gracidea.png" width="28" height="28" alt="" draggable="false" />
+        <h1>Shaymin SkyPatcher</h1>
+      </div>
+      <label class="language">
+        <span data-i18n>Language</span>
+        <select id="language">
+          <option value="en" lang="en">English</option>
+          <option value="ja" lang="ja">日本語</option>
+        </select>
+      </label>
+    </header>
+
+    <main>
+      <div class="workspace">
+        <aside class="setup">
+          <section class="card rom-card" aria-labelledby="rom-heading">
+            <div class="panel-head">
+              <span class="step" aria-hidden="true">1</span>
+              <h2 id="rom-heading" data-i18n>Select a ROM</h2>
+            </div>
+            <div class="panel-body">
+              <label class="file-label" for="rom" data-i18n>Pokémon Mystery Dungeon: Explorers of Sky (.nds)</label>
+              <input id="rom" type="file" accept=".nds" />
+              <p id="rom-privacy" class="hint" data-i18n>Your ROM is not uploaded and the original file is never overwritten.</p>
+            </div>
+          </section>
+
+          <section class="card" aria-labelledby="package-heading">
+            <div class="panel-head">
+              <h2 id="package-heading" data-i18n>Custom patches</h2>
+            </div>
+            <div class="panel-body">
+              <label class="file-label" for="packages" data-i18n>Add your own .skypatch files</label>
+              <input id="packages" type="file" accept=".skypatch" multiple disabled />
+              <div id="package-list"></div>
+            </div>
+          </section>
+        </aside>
+
+        <section class="card patch-card" aria-labelledby="patch-heading">
+          <div class="panel-head section-heading">
+            <span class="step" aria-hidden="true">2</span>
+            <h2 id="patch-heading" data-i18n>Choose patches</h2>
+          </div>
+
+          <div class="search-field">
+            <span aria-hidden="true">⌕</span>
+            <label class="sr-only" for="search" data-i18n>Find patches</label>
+            <input id="search" type="search" placeholder="Find a patch..." data-i18n-placeholder disabled />
+          </div>
+
+          <div id="patches">
+            <div class="empty">
+              <p data-i18n>Select a ROM to see compatible patches.</p>
+            </div>
+          </div>
+
+          <div class="patch-footer">
+            <div class="actions">
+              <button id="apply" disabled aria-live="polite">Apply 0 patches</button>
+              <button id="cancel" class="secondary" hidden data-i18n>Cancel</button>
+              <p id="status" role="status" aria-live="polite" hidden></p>
+            </div>
+
+            <details id="log-details" hidden>
+              <summary data-i18n>Details</summary><pre id="log"></pre>
+            </details>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <span data-i18n>Powered by</span> <a href="https://github.com/SkyTemple/skytemple-files" target="_blank" rel="noreferrer">skytemple-files</a> · <a href="https://github.com/shaymin-editor/skypatcher" target="_blank" rel="noreferrer" data-i18n>GitHub (Source + Credits)</a>
+      </footer>
+    </main>
+
+    <template id="patch-template">
+      <div class="patch">
+        <label class="patch-label">
+          <input type="checkbox" />
+          <span>
+            <strong></strong>
+            <span class="badge" hidden></span>
+            <span class="description"></span>
+          </span>
+        </label>
+        <div class="parameters" hidden></div>
+      </div>
+    </template>
+
+    <template id="input-parameter-template">
+      <label><span></span><input /></label>
+    </template>
+
+    <template id="select-parameter-template">
+      <label><span></span><select></select></label>
+    </template>
+
+    <template id="package-template">
+      <button type="button" class="package-remove"></button>
+    </template>
+
+    <template id="empty-message-template">
+      <div class="empty">
+        <p></p>
+      </div>
+    </template>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

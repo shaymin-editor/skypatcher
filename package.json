@@ -1,0 +1,32 @@
+{
+  "name": "shaymin-skypatcher",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shaymin-editor/skypatcher.git"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "prepare:runtime": "python3 scripts/prepare_runtime.py",
+    "build": "npm run prepare:runtime && tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "test:browser": "npm test && playwright test"
+  },
+  "dependencies": {
+    "armips": "1.1.0",
+    "pyodide": "314.0.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vite": "8.3.4"
+  }
+}

@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.runtime-cache/
+public/runtime/
+test-results/
+playwright-report/
+__pycache__/
+*.pyc
+
+# Local settings and files
+.DS_Store
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
+*.log
+*.nds
+*.srl
+*.skypatch
